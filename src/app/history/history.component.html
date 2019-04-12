@@ -1,0 +1,9 @@
+<!-- History -->
+
+<h4 id="title">History</h4>
+
+<ul>
+	<li *ngFor="let url_video of history_service.liste_url">
+		<a id="list" href="#" (click)="onPlayAgain(url_video)"> {{ url_video }} </a>
+	</li>
+</ul>

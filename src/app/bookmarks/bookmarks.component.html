@@ -1,0 +1,9 @@
+<!-- Bookmarks -->
+
+<h4 id="title">Bookmarks</h4>
+<label><em>Number of Bookmarks: </em> {{ bookmarks_service.nbBookmarks}} </label>
+<ul>
+	<li id="list" *ngFor="let url_video of bookmarks_service.liste_url">
+		<a href="#"> {{ url_video }} </a>
+	</li>
+</ul>

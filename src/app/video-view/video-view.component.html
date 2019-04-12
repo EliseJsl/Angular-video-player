@@ -1,0 +1,13 @@
+<!-- VideoView -->
+<div id="video">
+<iframe width="760" height="520" [src]="verifieUrl()" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+
+<!-- Bookmarks -->
+<button class="button" (click)="onAddBM()">Add to Bookmarks</button>
+<button class="button" (click)="onBM()">Display Bookmarks</button>
+
+</div>
+
+<div id="bookmarks" *ngIf="onBookmarks">
+<bookmarks></bookmarks>
+</div>

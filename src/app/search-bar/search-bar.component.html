@@ -1,0 +1,19 @@
+<!-- SearchBar -->
+<h4 id="question">What would you like to watch?</h4>
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+	<div class="form-group">
+		<input type="text" class="form-control" name="urlvideo" ngModel>
+	</div>
+
+	<button class="button" type="submit">Let's watch</button>		
+</form>
+<!-- If the user submit on url, we can display the video -->
+<div *ngIf="videoOn">
+<videoView [url_video]="urlvideo" ></videoView>
+</div>
+<div>
+<history ></history>
+</div>
+
+	
